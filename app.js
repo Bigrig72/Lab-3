@@ -1,5 +1,5 @@
 'use strict';
-console.log('app.js is running');
+/*console.log('app.js is running');
 
 alert('Hello and welcome to my site!!')
 var userName = prompt('What is your name?');
@@ -87,16 +87,26 @@ if (responseSix.toLowerCase() === "yes" || responseTwo.toLowerCase() === "y") {
 
     alert('Nope!! Look at the answers to follow!, ' + userName + '.');
 }
+*/
 
-var number = [1,2,3,4,5,6];
-var favorite = 6
+var favorite = 6;
+var userGuess = parseInt(prompt('Guess a number?'));
+   // if( userGuess === favorite){
+     //   alert('you are correct!');
+   // } else {
+     //   alert('you are wrong');
+   // }
 
-while( number !== favorite) {
-    if ( number = favorite) {
-        number = (prompt( 'your number was correct!'));
-    } else {
-        number = (prompt('Not the correct answer keep trying'))
-    }
+
+
+
+
+
+
+while(userGuess !== favorite) {
+    userGuess = parseInt(prompt('Guess again!'));
+
+
 }
 
 
@@ -104,11 +114,29 @@ while( number !== favorite) {
 
 
 
+//prompt('Guess a number?')
 
 
 
 
-var numberGuess = (prompt('guess what my favorite number is between 1 and 6'));
+
+    // if ( number = favorite) {
+    //     number = (prompt( 'your number was correct!'));
+    // } else {
+    //     number = (prompt('Not the correct answer keep trying'))
+    // }
+//}
+
+
+
+
+
+
+
+
+
+
+/*var numberGuess = (prompt('guess what my favorite number is between 1 and 6'));
 var favorite = '5'
 
 while (numberGuess !== randNumber) {
@@ -118,4 +146,4 @@ while (numberGuess !== randNumber) {
     numberGuess = (prompt('Your guess was too low. Try again.'));
   }
 }
-
+*/
