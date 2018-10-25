@@ -89,25 +89,74 @@ if (responseSix.toLowerCase() === "yes" || responseTwo.toLowerCase() === "y") {
 }
 */
 
-var favorite = 6;
-var userGuess = parseInt(prompt('Guess a number?'));
-   // if( userGuess === favorite){
-     //   alert('you are correct!');
-   // } else {
-     //   alert('you are wrong');
-   // }
+
+// var favorite = 6;
+// var userGuess = parseInt(prompt('Guess a number?'));
+
+// var counter = 0;
+// var maxGuesses = 4;
+
+// while (userGuess !== favorite && counter < maxGuesses) {
+
+//   if (userGuess < favorite) {
+
+//     userGuess = parseInt(prompt('Too low Guess again!'));
+
+//   } else if ( userGuess > favorite){
+
+//   userGuess = parseInt(prompt('Too high Guess again!'));
+//  }
+
+//   counter++;
+// }
 
 
 
 
 
+var answers = ['malone', 'selinsgrove', 'fredericksburg', 'seattle'];
+var responseSeven = prompt('Guess one of the four cities I have live in?').toLowerCase();
+var guesscounter = 0;
+console.log('guesscounter', guesscounter);
 
+while ( guesscounter < 6 ) {
 
-while(userGuess !== favorite) {
-    userGuess = parseInt(prompt('Guess again!'));
-
-
+  // while the guesscounter is working I want the user to guess 6 x
+  // itt up
+  guesscounter++;
+  
+  
+  var answerRight = false;
+  for (var i=0; i<answers.length; i++) {
+    if( responseSeven === answers[i]){
+      i=answers.length;
+      answerRight=true;
+      alert('correct');
+      console.log('i', i);
+      guesscounter = 6;
+    }
+  }
+  if (answerRight = false) {
+    responseSeven = prompt('Guess one of the four cities I have live in?').toLowerCase();
+  }
 }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
