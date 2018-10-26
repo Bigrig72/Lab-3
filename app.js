@@ -142,13 +142,12 @@ while (guessCounter < 6 && answerRight == false) {
       alert('correct');
       console.log('answer: ', answer);
       break;
-    }
-
-    if (answerRight == false) {
-      guessCounter++;
-      alert('incorrect');
-      console.log('Q 7 guess counter: ', guessCounter);
-    }
+    }    
+  }
+  if (answerRight == false) {
+    guessCounter++;
+    alert('incorrect');
+    console.log('Q 7 guess counter: ', guessCounter);
   }
 }
 // ------------------END QUESTION 7----------------------
